@@ -1,0 +1,18 @@
+<!-- Messaggio di conferma che il componente login è stato caricato -->
+<p>il componente login works!</p>
+
+<!-- Campo input per l'ID utente -->
+<label for="userId">User Id:</label>
+<input type="text" id="userId" placeholder="Nome Utente" [(ngModel)] = userId value="{{userId}}">
+
+<!-- Campo input per la password -->
+<label for="password">Password:</label>
+<input type="password" id="password" placeholder="Password">
+
+<!-- Pulsante per avviare il processo di autenticazione -->
+<button (click)="gestAuth()">Connetti</button>
+
+<p>
+    La tua username è: {{userId}}
+    La tua password è: {{password}}
+</p>
