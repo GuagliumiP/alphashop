@@ -7,7 +7,7 @@
 
 <!-- Campo input per la password -->
 <label for="password">Password:</label>
-<input type="password" id="password" placeholder="Password">
+<input type="password" id="password" placeholder="Password" [(ngModel)] = password value="{{password}}">
 
 <!-- Pulsante per avviare il processo di autenticazione -->
 <button (click)="gestAuth()">Connetti</button>

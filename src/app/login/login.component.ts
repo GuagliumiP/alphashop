@@ -23,5 +23,6 @@ export class LoginComponent implements OnInit {
   // Metodo per gestire l'autenticazione, senza parametri e che restituisce un voic
   gestAuth = (): void => {
     console.log("La chiave utente è" + this.userId); // Stampa l'ID utente nella console
+    console.log(`La tua username è: ${this.userId} La tua password è: ${this.password}`);
   }
 }
